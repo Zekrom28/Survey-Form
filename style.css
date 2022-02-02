@@ -1,0 +1,99 @@
+body {
+      font-family: 'Fjalla One', sans-serif;
+}
+
+.main {
+      background-image: url(https://scontent.fcrk1-4.fna.fbcdn.net/v/t1.6435-9/119965297_174277374232282_2816251861938460183_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=730e14&_nc_eui2=AeEWJBn_7G1DjqTlMxZIvfXNQPGJhWeixX1A8YmFZ6LFfTL-m_Z7yU3h3zDH-j9iB0Oe70oKlCtgF82xrAKrL1A-&_nc_ohc=Evgv1-002YkAX-Nq4xF&tn=aTMCKKvU5ez_nk9G&_nc_ht=scontent.fcrk1-4.fna&oh=00_AT99A7a4QCr3ux1sJp77R0IHe0bc-5QXa7OfgBl4oMbkQQ&oe=6221EE38);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: white;
+    overflow-y: scroll;
+    font-size: 24px
+}
+
+.main::after {
+  content: "";
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.main > h1,
+.main > p {
+  text-align: center;
+  font-family: 35px;
+  z-index: 2;
+  position: relative
+}
+
+.main-content {
+  background-color: transparent;
+    max-width: 650px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    margin: 0 auto;
+  margin-bottom: 40px;
+    border-radius: 5px;
+    z-index: 2;
+    position: relative;
+      box-shadow: 0px -1px 10px 5px #E3D12A;
+}
+
+#name, #email, #number, #dropdown, #comment {
+    display: block;
+    width: 100%;
+    height: 35px;
+    padding: 5px 10px;
+    color: #000000;
+    background-color: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+label[for=IGN], 
+label[for=Gamer-Tag-Number],
+label[for=number],
+label[for=dropdown],
+label[for=comment] {
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+#video-length, 
+#content-quality,
+#more-videos,
+fieldset input {
+  height: 20px;
+  width: 20px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+#comment {
+  min-height: 180px;
+}
+
+label[for=comment]{
+  margin-top: 30px
+}
+
+#submit {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background: #37af65;
+  border-radius: 2px;
+  cursor: pointer;
+  border: 0;
+  color: #ffffff;
+  font-size: 20px;
+}
